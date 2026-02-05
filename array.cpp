@@ -11,13 +11,13 @@ int main() {
     std::vector <TYPE> arr(n);
 
     const double step = M_PI * 2 / n;
+    TYPE sum = 0;
 
     for (size_t i = 0; i < n; i++) {
         arr[i] = sin(i * step);
+        sum += arr[i];
     }
 
-    TYPE sum = 0;
-    for (auto a : arr) sum += a;
     std::cout << sum << std::endl;
 
     return 0;
