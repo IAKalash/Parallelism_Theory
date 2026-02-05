@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
-#include <numeric>
 
 #ifndef TYPE
 #define TYPE double
