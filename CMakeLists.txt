@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 project(SinusSum)
 
-option(USE_FLOAT "Build with float instead of double" OFF)
+option(FLOAT "Build with float instead of double" OFF)
 
-if(USE_FLOAT)
+if(FLOAT)
     message(STATUS "Building with FLOAT")
     add_definitions(-DTYPE=float)
 else()
